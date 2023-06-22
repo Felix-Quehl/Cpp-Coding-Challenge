@@ -12,5 +12,6 @@ void test_message_is_correct()
 int main()
 {
     test_message_is_correct();
+    std::cout << "all tests passed" << std::endl;
     return 0;
 }

@@ -22,6 +22,9 @@ $(name): $(objects)
 %.o : %.cpp
 	$(CC) $(CFLAGS) $(headers) -o $@ -c $< 
 
+test: $(name)
+	./$(name)
+
 clean:
 	rm -rf $(trash)
 
