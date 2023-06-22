@@ -9,6 +9,7 @@ void test_message_is_correct()
     Examples::HelloWorld helloWorld(myName);
 
     std::string actual = helloWorld.getMessage();
+    
     assert(expected == actual);
 }
 
