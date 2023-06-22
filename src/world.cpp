@@ -1,6 +1,11 @@
-#include <world.h>
+#include <hello_world.h>
 
-std::string world::getMessage(std::string name)
+Examples::HelloWorld::HelloWorld(std::string pName)
+{
+   name = pName;
+}
+
+std::string Examples::HelloWorld::getMessage()
 {
     return "Hello World & Hello " + name + "!";
 }

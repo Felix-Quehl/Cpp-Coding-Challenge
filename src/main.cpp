@@ -1,11 +1,14 @@
 #include <iostream>
-#include <world.h>
+#include <hello_world.h>
 #include <cassert>
 
 void test_message_is_correct()
 {
     std::string expected = "Hello World & Hello Eleven!";
-    std::string actual = world::getMessage("Eleven");
+    std::string myName = "Eleven";
+    Examples::HelloWorld helloWorld(myName);
+
+    std::string actual = helloWorld.getMessage();
     assert(expected == actual);
 }
 
