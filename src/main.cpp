@@ -1,5 +1,6 @@
 #include <iostream>
 #include <world.h>
+#include <cassert>
 
 void test_message_is_correct()
 {
