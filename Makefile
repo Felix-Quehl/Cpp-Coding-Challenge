@@ -7,7 +7,7 @@ objects = $(sources:.cpp=.o)
 
 SHELL := /bin/bash
 CC = g++
-CFLAGS = -std=c++17 -Wall $(HEADERS) 
+CFLAGS = -std=c++20 -Wall $(HEADERS) 
 
 all: release
 
