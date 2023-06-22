@@ -4,6 +4,12 @@
     "version": "2.0.0",
     "tasks": [
         {
+            "label": "make clean",
+            "type": "shell",
+            "command": "make",
+            "args": ["clean"]
+        },
+        {
             "label": "make debug",
             "type": "shell",
             "command": "make",
@@ -13,7 +19,11 @@
             "group": {
                 "kind": "build",
                 "isDefault": true
-            }
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "dependsOn":["make clean"]
         }
     ]
 }
