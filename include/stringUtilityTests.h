@@ -23,6 +23,8 @@ namespace CodingChallenge
         void test_interpolate_with_duplicate_values();
         void test_interpolate_with_extra_values();
         void test_interpolate_with_missing_values();
+        void test_interpolate_with_tailing_replacement();
+        void test_interpolate_with_leading_replacement();
     };
 }
 #endif

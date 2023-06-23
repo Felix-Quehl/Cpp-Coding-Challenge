@@ -16,6 +16,8 @@ namespace CodingChallenge
         RUN_TEST(test_interpolate_with_duplicate_values);
         RUN_TEST(test_interpolate_with_extra_values);
         RUN_TEST(test_interpolate_with_missing_values);
+        RUN_TEST(test_interpolate_with_tailing_replacement);
+        RUN_TEST(test_interpolate_with_leading_replacement);
         std::cout << "...all tests passed" << std::endl;
     }
 
@@ -96,6 +98,34 @@ namespace CodingChallenge
             {"speed", "quick"},
             {"color", "brown"},
             {"extra", "stuff"},
+        };
+        std::string actual = sut.interpolate(&format, values, sizeof(values) / sizeof(InterpolationPair));
+
+        assert(expected == actual);
+    }
+
+    void StringUtilityTests::test_interpolate_with_tailing_replacement()
+    {
+        std::string expected = "The quick brown fox jumps over the lazy dogdog";
+        StringUtility sut = StringUtility();
+
+        std::string format = "The quick brown fox jumps over the lazy %(animal)%(animal)";
+        InterpolationPair values[] = {
+            {"animal", "dog"},
+        };
+        std::string actual = sut.interpolate(&format, values, sizeof(values) / sizeof(InterpolationPair));
+
+        assert(expected == actual);
+    }
+
+    void StringUtilityTests::test_interpolate_with_leading_replacement()
+    {
+        std::string expected = "dogdog quick brown fox jumps over the lazy dog";
+        StringUtility sut = StringUtility();
+
+        std::string format = "%(animal)%(animal) quick brown fox jumps over the lazy dog";
+        InterpolationPair values[] = {
+            {"animal", "dog"},
         };
         std::string actual = sut.interpolate(&format, values, sizeof(values) / sizeof(InterpolationPair));
 
