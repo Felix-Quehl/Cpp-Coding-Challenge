@@ -3,6 +3,12 @@
 **Test Execution Status**  
 [![build_and_test](https://github.com/Felix-Quehl/cpp_playground/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/Felix-Quehl/cpp_playground/actions/workflows/c-cpp.yml)
 
+This is my rather quick implementation of the coding challenge below. It features:
+
+* Make File to build the code from console
+* Unite Tests
+* GitHub Action CI Pipeline
+
 ```bash
 ----8<----8<----8<----8<----8<----8<----8<----8<----8<----8<----8<----8<----8<----
 
