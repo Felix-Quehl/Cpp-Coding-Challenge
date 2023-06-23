@@ -48,7 +48,10 @@
             },
             "options": {
                 "cwd": "${workspaceFolder}"
-            }
+            },
+            "dependsOn": [
+                "make debug"
+            ],
         }
     ]
 }

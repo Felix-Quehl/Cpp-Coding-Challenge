@@ -10,12 +10,12 @@ namespace CodingChallenge
     void StringUtilityTests::test_all()
     {
         std::cout << "Running tests ..." << std::endl;
-        test_polymorphism();
-        test_interpolate_with_single_value();
-        test_interpolate_with_two_values();
-        test_interpolate_with_duplicate_values();
-        test_interpolate_with_extra_values();
-        test_interpolate_with_missing_values();
+        RUN_TEST(test_polymorphism);
+        RUN_TEST(test_interpolate_with_single_value);
+        RUN_TEST(test_interpolate_with_two_values);
+        RUN_TEST(test_interpolate_with_duplicate_values);
+        RUN_TEST(test_interpolate_with_extra_values);
+        RUN_TEST(test_interpolate_with_missing_values);
         std::cout << "...all tests passed" << std::endl;
     }
 

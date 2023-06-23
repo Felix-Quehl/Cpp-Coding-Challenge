@@ -3,6 +3,9 @@
 
 #include <string>
 #include <stringUtility.h>
+#include <stdio.h>
+
+#define RUN_TEST(TEST) printf("Test-Case : %-40s\t:", #TEST); TEST(); printf("\tPass\n")
 
 namespace CodingChallenge
 {
