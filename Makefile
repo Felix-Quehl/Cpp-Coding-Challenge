@@ -1,5 +1,5 @@
 name = a.out
-HEADERS = -I./include
+headers = -I./include
 
 trash = $(shell find ./ -name '*.o') $(name)
 sources = $(shell find ./src -name '*.cpp')
@@ -7,7 +7,7 @@ objects = $(sources:.cpp=.o)
 
 SHELL := /bin/bash
 CC = g++
-CFLAGS = -std=c++20 -Wall -Wextra -pedantic  $(HEADERS) 
+CFLAGS = -std=c++98 -Wall -Wextra -pedantic $(headers) 
 
 all: release
 
