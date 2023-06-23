@@ -4,7 +4,7 @@
 namespace CodingChallenge
 {
     /**
-     *  @brief  Interpolates keys in a string with the given values.
+     *  @brief  Interpolates keys in a string with the given values, for example: "Hello %(name)".
      *  @param format  string that is holding the template for the interpolation.
      *  @param values  pointer to an array of type InterpolationPair[]
      *  @param count  number values on the array
