@@ -7,7 +7,12 @@
             "label": "make clean",
             "type": "shell",
             "command": "make",
-            "args": ["clean"]
+            "args": [
+                "clean"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            }
         },
         {
             "label": "make debug",
@@ -23,16 +28,26 @@
             "problemMatcher": [
                 "$gcc"
             ],
-            "dependsOn":["make clean"]
+            "dependsOn": [
+                "make clean"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            }
         },
         {
-            "label": "make clean",
+            "label": "make test",
             "type": "shell",
             "command": "make",
-            "args": ["test"],
+            "args": [
+                "test"
+            ],
             "group": {
                 "kind": "test",
                 "isDefault": true
+            },
+            "options": {
+                "cwd": "${workspaceFolder}"
             }
         }
     ]

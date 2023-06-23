@@ -45,5 +45,10 @@
         "streambuf": "cpp",
         "typeinfo": "cpp",
         "cassert": "cpp"
-    }
+    },
+    "C_Cpp.default.cppStandard": "c++11",
+    "C_Cpp.default.includePath": [
+        "${workspaceFolder}/include"
+    ],
+    "C_Cpp.default.configurationProvider": "ms-vscode.makefile-tools"
 }
