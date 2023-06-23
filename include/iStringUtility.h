@@ -9,7 +9,7 @@ namespace CodingChallenge
     struct InterpolationPair
     {
         std::string key;
-        std::string value;
+        std::string text;
     };
 
     class IStringUtility

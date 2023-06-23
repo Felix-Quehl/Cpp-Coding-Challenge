@@ -23,8 +23,8 @@ namespace CodingChallenge
             while ((position = result.find(fullKey, position)) >= 0)
             {
                 result.erase(position, keyLength);
-                result.insert(position, value->value);
-                position += value->value.length();
+                result.insert(position, value->text);
+                position += value->text.length();
             }
         }
         return result;
