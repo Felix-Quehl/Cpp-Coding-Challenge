@@ -1,11 +1,13 @@
-# C++ Coding Challenge [![build_and_test](https://github.com/Felix-Quehl/cpp_playground/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/Felix-Quehl/cpp_playground/actions/workflows/c-cpp.yml)
+# C++ Coding Challenge
+
+## Test Status: [![build_and_test](https://github.com/Felix-Quehl/cpp_playground/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/Felix-Quehl/cpp_playground/actions/workflows/c-cpp.yml)
 
 ```bash
 ----8<----8<----8<----8<----8<----8<----8<----8<----8<----8<----8<----8<----8<----
 
         Specify and implement an interface to interpolate variables into
         a format string.  In the format string, variables are represented
-        by a percentage-sign followed by a variable name in parentheses.
+        by a percentage sign followed by a variable name in parentheses.
 
         The interpolation interface needs only support string variables.
 
