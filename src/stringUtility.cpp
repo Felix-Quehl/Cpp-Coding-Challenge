@@ -11,11 +11,12 @@ namespace CodingChallenge
             InterpolationPair *value = values + count;
             std::string fullKey = "%(" + value->key + ")";
             int keyLength = fullKey.length();
-            int position;
-            while ((position = result.find(fullKey)) >= 0)
+            int position = 0;
+            while ((position = result.find(fullKey, position)) >= 0)
             {
                 result.erase(position, keyLength);
                 result.insert(position, value->value);
+                position+=value->value.length();
             }
         }
         return result;
