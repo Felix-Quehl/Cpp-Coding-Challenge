@@ -1,6 +1,7 @@
 # C++ Coding Challenge
 
-## Test Status: [![build_and_test](https://github.com/Felix-Quehl/cpp_playground/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/Felix-Quehl/cpp_playground/actions/workflows/c-cpp.yml)
+**Test Execution Status**  
+[![build_and_test](https://github.com/Felix-Quehl/cpp_playground/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/Felix-Quehl/cpp_playground/actions/workflows/c-cpp.yml)
 
 ```bash
 ----8<----8<----8<----8<----8<----8<----8<----8<----8<----8<----8<----8<----8<----
