@@ -3,6 +3,14 @@
 
 namespace CodingChallenge
 {
+    /**
+     *  @brief  Interpolates keys in a string with the given values.
+     *  @param format  string that is holding the template for the interpolation.
+     *  @param values  pointer to an array of type InterpolationPair[]
+     *  @param count  number values on the array
+     *  @return  Interpolated string
+     *
+     */
     std::string StringUtility::interpolate(std::string *format, InterpolationPair *values, int count)
     {
         std::string result = format->c_str();
@@ -16,7 +24,7 @@ namespace CodingChallenge
             {
                 result.erase(position, keyLength);
                 result.insert(position, value->value);
-                position+=value->value.length();
+                position += value->value.length();
             }
         }
         return result;
