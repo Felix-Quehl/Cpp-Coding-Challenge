@@ -33,8 +33,9 @@
 ---->8---->8---->8---->8---->8---->8---->8---->8---->8---->8---->8---->8---->8----
 ```
 
-
 ## How to Run
+
+*Notice: I am developed this on linux/ubuntu, in theory the code should run fine on windows but I have not checked that. What probably need to be changed slightly are some path in the Makefile.*
 
 **compile a clean and run the tests**
 
