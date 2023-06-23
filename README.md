@@ -41,6 +41,10 @@ It features:
 ---->8---->8---->8---->8---->8---->8---->8---->8---->8---->8---->8---->8---->8----
 ```
 
+Please do not use this code for more modern projects as there is an implementation (`std::format`) in the standard library:
+
+https://en.cppreference.com/w/cpp/utility/format/format
+
 ## How to Run
 
 *Notice: I am developed this on linux/ubuntu, in theory the code should run fine on windows but I have not checked that. What probably need to be changed slightly are some path in the Makefile.*
