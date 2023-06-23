@@ -32,3 +32,31 @@
 
 ---->8---->8---->8---->8---->8---->8---->8---->8---->8---->8---->8---->8---->8----
 ```
+
+
+## How to Run
+
+**compile a clean and run the tests**
+
+```bash
+make clean test
+```
+
+*Example Output:*
+
+```bash
+rm -rf ./src/main.o ./src/stringUtilityTests.o ./src/stringUtility.o a.out
+g++ -std=c++98 -Wall -Wextra -pedantic -I./include  -I./include -o src/stringUtilityTests.o -c src/stringUtilityTests.cpp 
+g++ -std=c++98 -Wall -Wextra -pedantic -I./include  -I./include -o src/main.o -c src/main.cpp 
+g++ -std=c++98 -Wall -Wextra -pedantic -I./include  -I./include -o src/stringUtility.o -c src/stringUtility.cpp 
+g++  src/stringUtilityTests.o src/main.o src/stringUtility.o -o a.out
+./a.out
+Running tests ...
+Test-Case : test_polymorphism                           :       Pass
+Test-Case : test_interpolate_with_single_value          :       Pass
+Test-Case : test_interpolate_with_two_values            :       Pass
+Test-Case : test_interpolate_with_duplicate_values      :       Pass
+Test-Case : test_interpolate_with_extra_values          :       Pass
+Test-Case : test_interpolate_with_missing_values        :       Pass
+...all tests passed
+```
