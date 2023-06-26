@@ -47,7 +47,7 @@ https://en.cppreference.com/w/cpp/utility/format/format
 
 ## How to Run
 
-*Notice: I am developed this on linux/ubuntu, in theory the code should run fine on windows but I have not checked that. What probably need to be changed slightly are some path in the Makefile.*
+*Notice: I have developed this on linux/ubuntu, in theory the code should run fine on windows but I have not checked that. What probably need to be changed slightly are some path in the Makefile.*
 
 **compile a clean and run the tests**
 
